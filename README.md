@@ -1,1 +1,1 @@
-# eslint-config-kong-ui
+# @kong/eslint-config-kong-ui

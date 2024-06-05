@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-kong-ui",
+  "name": "@kong/eslint-config-kong-ui",
   "version": "1.0.0",
   "description": "Sharable ESLint configuration for Kong's frontend repositories",
   "main": "configs/index.mjs",
