@@ -1,0 +1,127 @@
+{
+  "name": "eslint-config-kong-ui",
+  "version": "1.0.0",
+  "description": "Sharable ESLint configuration for Kong's frontend repositories",
+  "main": "configs/index.mjs",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./configs/index.mjs",
+    "./package.json": "./package.json",
+    "./dist/*": "./dist/*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "semantic-release": "semantic-release",
+    "commit": "cz"
+  },
+  "dependencies": {
+    "@eslint/compat": "^1.0.3",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.4.0",
+    "@stylistic/eslint-plugin": "^2.1.0",
+    "eslint-plugin-cypress": "^3.3.0",
+    "eslint-plugin-jsonc": "^2.16.0",
+    "eslint-plugin-n": "^17.8.0",
+    "eslint-plugin-promise": "^6.2.0",
+    "eslint-plugin-vue": "^9.26.0",
+    "globals": "^15.3.0",
+    "jsonc-eslint-parser": "^2.4.0",
+    "typescript-eslint": "^7.12.0",
+    "vue-eslint-parser": "^9.4.3"
+  },
+  "peerDependencies": {
+    "eslint": ">= 9.4.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@digitalroute/cz-conventional-changelog-for-jira": "^8.0.1",
+    "@evilmartians/lefthook": "^1.6.15",
+    "@semantic-release/changelog": "^6.0.3",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.4.0",
+    "semantic-release": "^24.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kong/eslint-config-kong-ui.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "kong"
+  ],
+  "author": {
+    "name": "Kong Inc.",
+    "url": "https://konghq.com/"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Kong/eslint-config-kong-ui/issues"
+  },
+  "homepage": "https://github.com/Kong/eslint-config-kong-ui#readme",
+  "release": {
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      "main",
+      "next",
+      "next-major",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json",
+            "src/component-list.ts",
+            "scripts/utilities/__snapshots__/generate-icon-components.spec.ts.snap"
+          ]
+        }
+      ],
+      "@semantic-release/github"
+    ]
+  },
+  "engines": {
+    "node": ">=20.13.1"
+  },
+  "volta": {
+    "node": "20.13.1",
+    "pnpm": "9.1.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/@digitalroute/cz-conventional-changelog-for-jira",
+      "skipScope": false,
+      "jiraOptional": true,
+      "jiraLocation": "post-description",
+      "jiraPrepend": "[",
+      "jiraAppend": "]"
+    }
+  }
+}
