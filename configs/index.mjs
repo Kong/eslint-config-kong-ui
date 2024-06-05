@@ -30,11 +30,14 @@ export default [
       '**/dist/',
       '**/public/',
       '**/bin/',
+      '**/.nuxt/',
+      '**/.output/',
+      '**/.wrangler/',
     ],
   },
   {
     files: [
-      '**/*.{js,mjs,cjs,jsx,ts,tsx,vue}',
+      '**/*.{js,mjs,cjs,jsx,ts,tsx,mts,cts,vue}',
     ],
     languageOptions: {
       parser: vueParser,

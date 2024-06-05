@@ -37,7 +37,7 @@ This package exports several ESLint configurations to use in your project. Read 
 
 #### Default config
 
-The default config provides linting for files matching this pattern `**/*.{js,mjs,cjs,jsx,ts,tsx,vue}` and includes rules configured via:
+The default config provides linting for files matching this pattern `**/*.{js,mjs,cjs,jsx,ts,tsx,mts,cts,vue}` and includes rules configured via:
 
 - ESLint recommended rules
 - TypeScript recommended rules
