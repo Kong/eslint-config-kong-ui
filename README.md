@@ -9,6 +9,10 @@ A [shared ESLint configuration](https://eslint.org/docs/latest/extend/shareable-
 
 - [Usage](#usage)
   - [Installation](#installation)
+  - [Available Configs](#available-configs)
+  - [Setup](#setup)
+  - [Overriding settings from the shared config](#overriding-settings-from-the-shared-config)
+  - [Apply a config to a subset of files](#apply-a-config-to-a-subset-of-files)
 - [Contributing \& Local Development](#contributing--local-development)
   - [Lint and fix](#lint-and-fix)
   - [Committing Changes](#committing-changes)
@@ -25,6 +29,105 @@ pnpm add -D @kong/eslint-config-kong-ui
 
 # or for a mono repository, install to the workspace root
 pnpm add -wD @kong/eslint-config-kong-ui
+```
+
+### Available Configs
+
+This package exports several ESLint configurations to use in your project. Read through the available configs below, and see the [Setup](#setup) section for instructions on how to add them to your project.
+
+#### Default config
+
+The default config provides linting for files matching this pattern `**/*.{js,mjs,cjs,jsx,ts,tsx,vue}` and includes rules configured via:
+
+- ESLint recommended rules
+- TypeScript recommended rules
+- `eslint-plugin-vue`
+- `eslint-plugin-promise`
+- `eslint-plugin-cypress`
+- [ESLint Stylistic](https://eslint.style/) rules configured for our preferred formatting settings
+- ...and more. See [`index.mjs`](./configs/index.mjs) to view the configuration.
+
+The default config can be imported as shown here:
+
+```javascript
+import eslintKongUiConfig from '@kong/eslint-config-kong-ui'
+// or
+import eslintKongUiConfig from '@kong/eslint-config-kong-ui/default'
+```
+
+#### JSON config
+
+The JSON config provides linting for files matching this pattern `**/*.{json,jsonc}` and includes rules configured via:
+
+- `eslint-plugin-jsonc`
+
+The JSON config can be imported as shown here:
+
+```javascript
+import eslintKongUiConfigJson from '@kong/eslint-config-kong-ui/json'
+```
+
+> [!Note]
+> You will likely only want to apply the JSON config to a subset of file patterns in your project. See the section on [applying a config to a subset of files](#apply-a-config-to-a-subset-of-files) for detailed instructions.
+
+### Setup
+
+To use the shared config, import the package inside of an `eslint.config.mjs` file and add it into the exported array, like this:
+
+```javascript
+// eslint.config.mjs
+import eslintKongUiConfig from '@kong/eslint-config-kong-ui'
+
+export default [
+  ...eslintKongUiConfig,
+]
+```
+
+### Overriding settings from the shared config
+
+You can override settings from the shareable config by adding them directly into your `eslint.config.mjs` file after importing the shareable config. For example:
+
+```javascript
+// eslint.config.mjs
+import eslintKongUiConfig from '@kong/eslint-config-kong-ui'
+
+export default [
+  ...eslintKongUiConfig,
+  // anything from here will override eslintKongUiConfig
+  {
+    rules: {
+        'no-unused-vars': 'error',
+    }
+  }
+]
+```
+
+### Apply a config to a subset of files
+
+You can [apply a config array to just a subset of files](https://eslint.org/docs/latest/use/configure/combine-configs#apply-a-config-object-to-a-subset-of-files) by using the `map()` method to add a `files` key to each config object.
+
+For example, you may only want to apply the [JSON config](#json-config) to `**/locales/**/*.json` files in your project (this is our practice at Kong):
+
+```javascript
+// eslint.config.mjs
+import eslintKongUiConfig from '@kong/eslint-config-kong-ui'
+import eslintKongUiConfigJson from '@kong/eslint-config-kong-ui/json'
+
+export default [
+  // Use the main config for all other files
+  ...eslintKongUiConfig,
+  // Only apply the shared JSON config to files that match the given pattern
+  ...eslintKongUiConfigJson.map(config => ({
+    ...config,
+    files: ['**/locales/**/*.json']
+  })),
+  // your modifications
+  {
+    rules: {
+      'no-unused-vars': 'error',
+    }
+  }
+]
 ```
 
 ## Contributing & Local Development

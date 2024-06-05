@@ -9,6 +9,8 @@
   ],
   "exports": {
     ".": "./configs/index.mjs",
+    "./default": "./configs/index.mjs",
+    "./json": "./configs/json.mjs",
     "./package.json": "./package.json",
     "./dist/*": "./dist/*"
   },
