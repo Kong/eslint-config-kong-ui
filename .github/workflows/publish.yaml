@@ -37,12 +37,11 @@ jobs:
         # Reference the env variable NPM_TOKEN here, not the secret
         run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
 
-
       - name: Setup PNPM with Dependencies
         uses: ./.github/actions/setup-pnpm-with-dependencies/
 
       - name: Semantic Release
-        uses: cycjimmy/semantic-release-action@v3
+        uses: cycjimmy/semantic-release-action@v4
         env:
           # Since branch protections are on (pushing commits) you need to use a bot PAT
           GITHUB_TOKEN: ${{ secrets.KONGPONENTS_BOT_PAT }}
