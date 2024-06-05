@@ -111,6 +111,7 @@ export default [
         'ts-nocheck': 'allow-with-description',
         minimumDescriptionLength: 10,
       }],
+      '@typescript-eslint/no-unused-vars': 'warn',
       'vue/no-restricted-static-attribute': ['error',
         {
           key: 'data-test-id',
