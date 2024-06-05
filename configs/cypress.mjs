@@ -12,9 +12,6 @@ export default [
     extends: ['plugin:cypress/recommended'],
   }),
   {
-    ...compat.config({
-      extends: ['plugin:cypress/recommended'],
-    }),
     rules: {
       'promise/always-return': 'off',
       'promise/catch-or-return': 'off',
