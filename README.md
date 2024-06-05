@@ -57,9 +57,7 @@ import eslintKongUiConfig from '@kong/eslint-config-kong-ui/default'
 
 #### JSON config
 
-The JSON config provides linting for files matching this pattern `**/*.{json,jsonc}` and includes rules configured via:
-
-- `eslint-plugin-jsonc`
+The JSON config provides linting for files matching this pattern `**/*.{json,jsonc}` and includes rules and preferred formatting settings configured via `eslint-plugin-jsonc`.
 
 The JSON config can be imported as shown here:
 
