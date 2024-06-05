@@ -1,0 +1,15 @@
+node_modules
+*.log
+.output
+.data
+# Env variables
+.env
+.env.local
+
+package-lock.json
+framework
+dist
+.DS_Store
+
+# Local History
+.history
