@@ -1,9 +1,31 @@
 # @kong/eslint-config-kong-ui
 
+A [shared ESLint configuration](https://eslint.org/docs/latest/extend/shareable-configs) for Kong's frontend repositories.
+
+> [!Note]
+> This package only supports ESLint flat config files and requires `eslint >= 9.0.0`.
+>
+> Beginning in ESLint v9.0.0, the default configuration system utilizes a new flat config system. See the [Migration Guide](https://eslint.org/docs/latest/extend/plugin-migration-flat-config) for more information.
+
+- [Usage](#usage)
+  - [Installation](#installation)
 - [Contributing \& Local Development](#contributing--local-development)
   - [Lint and fix](#lint-and-fix)
   - [Committing Changes](#committing-changes)
   - [Package Publishing](#package-publishing)
+
+## Usage
+
+### Installation
+
+Install the `@kong/eslint-config-kong-ui` package as a `devDependency` in your host project.
+
+```sh
+pnpm add -D @kong/eslint-config-kong-ui
+
+# or for a mono repository, install to the workspace root
+pnpm add -wD @kong/eslint-config-kong-ui
+```
 
 ## Contributing & Local Development
 
