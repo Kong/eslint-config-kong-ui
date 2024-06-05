@@ -8,7 +8,7 @@ pre-push:
       skip:
         - merge
         - rebase
-      run: yarn lint
+      run: pnpm lint
 
 commit-msg:
   parallel: true
@@ -17,4 +17,4 @@ commit-msg:
       skip:
         - merge
         - rebase
-      run: yarn commitlint --edit "$1"
+      run: pnpm commitlint --edit "$1"
