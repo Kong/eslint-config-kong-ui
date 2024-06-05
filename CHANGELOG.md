@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Kong/eslint-config-kong-ui/compare/v1.0.0...v1.0.1) (2024-06-05)
+
+
+### Bug Fixes
+
+* trigger release ([bc15e45](https://github.com/Kong/eslint-config-kong-ui/commit/bc15e45a2232e1a547bef71a81592914570b06de))
+
 # 1.0.0 (2024-06-05)
 
 
