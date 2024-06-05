@@ -5,7 +5,7 @@
   "main": "configs/index.mjs",
   "type": "module",
   "files": [
-    "dist"
+    "configs"
   ],
   "exports": {
     ".": "./configs/index.mjs",
