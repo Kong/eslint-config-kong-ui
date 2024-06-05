@@ -3,7 +3,7 @@ import eslintKongUiConfigJson from './configs/json.mjs'
 import eslintKongUiConfigCypress from './configs/cypress.mjs'
 
 export default [
-  // Use the main config for all other files
+  // Use the main config for all files
   ...eslintKongUiConfig,
   // Only apply the shared JSON config to files that match the given pattern
   ...eslintKongUiConfigJson.map(config => ({

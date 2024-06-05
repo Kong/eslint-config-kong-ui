@@ -69,7 +69,7 @@ import eslintKongUiConfigJson from '@kong/eslint-config-kong-ui/json'
 
 #### Cypress config
 
-The Cypress config provides linting for Cypress test files, given a pattern for `files` that your **host project provides**, and includes rules and preferred formatting settings configured via `eslint-plugin-cypress`, as well as the ESLint and TypeScript ESLint recommended settings. See [`cypress.mjs`](./configs/cypress.mjs) to view the configuration.
+The Cypress config includes all settings from the [Default config](#default-config) and provides additional rules for Cypress test files, given a pattern for `files` that your **host project provides**, and includes rules and preferred formatting settings configured via `eslint-plugin-cypress`, as well as the ESLint and TypeScript ESLint recommended settings. See [`cypress.mjs`](./configs/cypress.mjs) to view the configuration.
 
 The Cypress config can be imported as shown here:
 

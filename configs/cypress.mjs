@@ -1,13 +1,12 @@
-import eslint from '@eslint/js'
-import tseslint from 'typescript-eslint'
+import eslintKongUiConfig from './index.mjs'
 
 // Compatibility utils
 import { FlatCompat } from '@eslint/eslintrc'
 const compat = new FlatCompat()
 
 export default [
-  eslint.configs.recommended,
-  ...tseslint.configs.recommended,
+  // Use the main config for all files
+  ...eslintKongUiConfig,
   ...compat.config({
     extends: ['plugin:cypress/recommended'],
   }),
