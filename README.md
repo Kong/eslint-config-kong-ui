@@ -43,7 +43,6 @@ The default config provides linting for files matching this pattern `**/*.{js,mj
 - TypeScript recommended rules
 - `eslint-plugin-vue`
 - `eslint-plugin-promise`
-- `eslint-plugin-cypress`
 - [ESLint Stylistic](https://eslint.style/) rules configured for our preferred formatting settings
 - ...and more. See [`index.mjs`](./configs/index.mjs) to view the configuration.
 
@@ -67,6 +66,19 @@ import eslintKongUiConfigJson from '@kong/eslint-config-kong-ui/json'
 
 > [!Note]
 > You will likely only want to apply the JSON config to a subset of file patterns in your project. See the section on [applying a config to a subset of files](#apply-a-config-to-a-subset-of-files) for detailed instructions.
+
+#### Cypress config
+
+The Cypress config provides linting for Cypress test files, given a pattern for `files` that your **host project provides**, and includes rules and preferred formatting settings configured via `eslint-plugin-cypress`, as well as the ESLint and TypeScript ESLint recommended settings. See [`cypress.mjs`](./configs/cypress.mjs) to view the configuration.
+
+The Cypress config can be imported as shown here:
+
+```javascript
+import eslintKongUiConfigCypress from '@kong/eslint-config-kong-ui/cypress'
+```
+
+> [!Note]
+> You will likely only want to apply the Cypress config to a subset of file patterns in your project. See the section on [applying a config to a subset of files](#apply-a-config-to-a-subset-of-files) for detailed instructions.
 
 ### Setup
 
@@ -110,6 +122,7 @@ For example, you may only want to apply the [JSON config](#json-config) to `**/l
 // eslint.config.mjs
 import eslintKongUiConfig from '@kong/eslint-config-kong-ui'
 import eslintKongUiConfigJson from '@kong/eslint-config-kong-ui/json'
+import eslintKongUiConfigCypress from '@kong/eslint-config-kong-ui/cypress'
 
 export default [
   // Use the main config for all other files
@@ -118,6 +131,16 @@ export default [
   ...eslintKongUiConfigJson.map(config => ({
     ...config,
     files: ['**/locales/**/*.json']
+  })),
+  // Only apply the shared Cypress config to files that match the given pattern
+  ...eslintKongUiConfigCypress.map(config => ({
+    ...config,
+    files: [
+      '**/*.cy.ts',
+      '**/cypress/**',
+      'cypress/integration/**.spec.{js,ts,jsx,tsx}',
+      'cypress/integration/**.cy.{js,ts,jsx,tsx}',
+    ]
   })),
   // your modifications
   {

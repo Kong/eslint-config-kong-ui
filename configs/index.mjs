@@ -20,9 +20,6 @@ export default [
       extends: ['plugin:promise/recommended'],
     }),
   ),
-  ...compat.config({
-    extends: ['plugin:cypress/recommended'],
-  }),
   // Global ignores
   {
     ignores: [
@@ -135,25 +132,5 @@ export default [
         },
       ],
     },
-  },
-  {
-    files: [
-      '**/*.cy.ts',
-      '**/cypress/**',
-    ],
-    rules: {
-      'promise/always-return': 'off',
-      'promise/catch-or-return': 'off',
-      'promise/no-nesting': 'off',
-    },
-  },
-  {
-    files: [
-      'cypress/integration/**.spec.{js,ts,jsx,tsx}',
-      'cypress/integration/**.cy.{js,ts,jsx,tsx}',
-    ],
-    ...compat.config({
-      extends: ['plugin:cypress/recommended'],
-    }),
   },
 ]
