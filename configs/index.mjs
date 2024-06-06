@@ -134,4 +134,12 @@ export default [
       ],
     },
   },
+  {
+    files: [
+      '**/*.{js,cjs,jsx}',
+    ],
+    rules: {
+      '@typescript-eslint/no-var-requires': 'off',
+    },
+  },
 ]
