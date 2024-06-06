@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Kong/eslint-config-kong-ui/compare/v1.0.1...v1.0.2) (2024-06-06)
+
+
+### Bug Fixes
+
+* engines ([c538ecb](https://github.com/Kong/eslint-config-kong-ui/commit/c538ecb33407ae3a18b541ea73f71f65e278d5e6))
+
 ## [1.0.1](https://github.com/Kong/eslint-config-kong-ui/compare/v1.0.0...v1.0.1) (2024-06-05)
 
 
