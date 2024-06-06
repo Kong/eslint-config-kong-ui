@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/Kong/eslint-config-kong-ui/compare/v1.0.2...v1.0.3) (2024-06-06)
+
+
+### Bug Fixes
+
+* allow require in js ([ba9955d](https://github.com/Kong/eslint-config-kong-ui/commit/ba9955d43fbd55996d8f918e82ad016b45e7f411))
+
 ## [1.0.2](https://github.com/Kong/eslint-config-kong-ui/compare/v1.0.1...v1.0.2) (2024-06-06)
 
 
