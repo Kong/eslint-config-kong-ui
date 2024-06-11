@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/Kong/eslint-config-kong-ui/compare/v1.0.3...v1.0.4) (2024-06-11)
+
+
+### Bug Fixes
+
+* **ignores:** add .vitepress/cache to global ignores ([a0c41c3](https://github.com/Kong/eslint-config-kong-ui/commit/a0c41c356bd97e26c5d1a117910739266e41d945))
+
 ## [1.0.3](https://github.com/Kong/eslint-config-kong-ui/compare/v1.0.2...v1.0.3) (2024-06-06)
 
 
