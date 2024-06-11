@@ -30,6 +30,7 @@ export default [
       '**/.nuxt/',
       '**/.output/',
       '**/.wrangler/',
+      '**/.vitepress/cache/',
     ],
   },
   {
