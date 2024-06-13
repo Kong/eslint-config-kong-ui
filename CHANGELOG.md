@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Kong/eslint-config-kong-ui/compare/v1.0.4...v1.1.0) (2024-06-13)
+
+
+### Features
+
+* add space-infix-ops ([#2](https://github.com/Kong/eslint-config-kong-ui/issues/2)) ([9b18ed2](https://github.com/Kong/eslint-config-kong-ui/commit/9b18ed2f13a3733c49eb4bc5b86efdbb3cb20679))
+
 ## [1.0.4](https://github.com/Kong/eslint-config-kong-ui/compare/v1.0.3...v1.0.4) (2024-06-11)
 
 
