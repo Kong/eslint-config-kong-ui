@@ -83,6 +83,7 @@ export default [
       '@stylistic/no-trailing-spaces': 'error',
       '@stylistic/no-multi-spaces': 'error',
       '@stylistic/space-before-blocks': ['error', 'always'],
+      '@stylistic/space-infix-ops': ['error', { 'int32Hint': false }],
       '@stylistic/keyword-spacing': ['error', {
         before: true,
         after: true,
