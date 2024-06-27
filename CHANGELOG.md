@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Kong/eslint-config-kong-ui/compare/v1.1.0...v1.1.1) (2024-06-27)
+
+
+### Bug Fixes
+
+* **ignores:** ignore build directory ([f2036a4](https://github.com/Kong/eslint-config-kong-ui/commit/f2036a49e9e5c7555869e0b9d1e63b7962aca869))
+
 # [1.1.0](https://github.com/Kong/eslint-config-kong-ui/compare/v1.0.4...v1.1.0) (2024-06-13)
 
 
