@@ -24,32 +24,32 @@
     "commit": "cz"
   },
   "dependencies": {
-    "@eslint/compat": "^1.0.3",
+    "@eslint/compat": "^1.1.1",
     "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "^9.4.0",
-    "@stylistic/eslint-plugin": "^2.1.0",
+    "@eslint/js": "^9.7.0",
+    "@stylistic/eslint-plugin": "^2.3.0",
     "eslint-plugin-cypress": "^3.3.0",
     "eslint-plugin-jsonc": "^2.16.0",
-    "eslint-plugin-n": "^17.8.0",
-    "eslint-plugin-promise": "^6.2.0",
-    "eslint-plugin-vue": "^9.26.0",
-    "globals": "^15.3.0",
+    "eslint-plugin-n": "^17.9.0",
+    "eslint-plugin-promise": "^6.6.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "globals": "^15.8.0",
     "jsonc-eslint-parser": "^2.4.0",
-    "typescript-eslint": "^7.12.0",
+    "typescript-eslint": "^7.16.1",
     "vue-eslint-parser": "^9.4.3"
   },
   "peerDependencies": {
-    "eslint": ">= 9.4.0"
+    "eslint": ">= 9.7.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@digitalroute/cz-conventional-changelog-for-jira": "^8.0.1",
-    "@evilmartians/lefthook": "^1.6.15",
+    "@evilmartians/lefthook": "^1.7.4",
     "@semantic-release/changelog": "^6.0.3",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.4.0",
+    "eslint": "^9.7.0",
     "semantic-release": "^24.0.0"
   },
   "repository": {
@@ -113,8 +113,8 @@
     "node": ">=18.0.0 || >=20.13.1"
   },
   "volta": {
-    "node": "20.13.1",
-    "pnpm": "9.1.4"
+    "node": "20.15.1",
+    "pnpm": "9.6.0"
   },
   "config": {
     "commitizen": {
