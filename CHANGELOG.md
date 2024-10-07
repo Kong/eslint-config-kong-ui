@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/Kong/eslint-config-kong-ui/compare/v1.1.1...v1.1.2) (2024-10-07)
+
+
+### Bug Fixes
+
+* lockfile ([#10](https://github.com/Kong/eslint-config-kong-ui/issues/10)) ([ae084b5](https://github.com/Kong/eslint-config-kong-ui/commit/ae084b592761abd7c768507720fca74b8218ddc2))
+
 ## [1.1.1](https://github.com/Kong/eslint-config-kong-ui/compare/v1.1.0...v1.1.1) (2024-06-27)
 
 
