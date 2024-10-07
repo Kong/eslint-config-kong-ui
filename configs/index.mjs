@@ -124,6 +124,10 @@ export default [
           key: 'data-tracking-id',
           message: 'Using "data-tracking-id" is not allowed. Use "data-testid" instead.',
         },
+        {
+          key: 'data-allow-mismatch',
+          message: 'Using "data-allow-mismatch" to prevent hydration errors is _very_ discouraged. \nPlease attempt to resolve the underlying hydration issue. If you are unable to resolve the issue and must use this attribute, please only disable the error for the impacted line.',
+        },
       ],
       'vue/no-restricted-v-bind': ['error',
         {
