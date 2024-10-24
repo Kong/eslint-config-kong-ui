@@ -33,7 +33,7 @@
     "eslint-plugin-n": "^17.8.0",
     "eslint-plugin-promise": "^6.2.0",
     "eslint-plugin-vue": "^9.26.0",
-    "globals": "^15.3.0",
+    "globals": "^15.11.0",
     "jsonc-eslint-parser": "^2.4.0",
     "typescript-eslint": "^7.12.0",
     "vue-eslint-parser": "^9.4.3"
@@ -42,15 +42,15 @@
     "eslint": ">= 9.4.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
     "@digitalroute/cz-conventional-changelog-for-jira": "^8.0.1",
-    "@evilmartians/lefthook": "^1.6.15",
+    "@evilmartians/lefthook": "^1.7.18",
     "@semantic-release/changelog": "^6.0.3",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.4.0",
-    "semantic-release": "^24.0.0"
+    "semantic-release": "^24.1.2"
   },
   "repository": {
     "type": "git",
@@ -113,7 +113,7 @@
     "node": ">=18.0.0 || >=20.13.1"
   },
   "volta": {
-    "node": "20.13.1",
+    "node": "20.18.0",
     "pnpm": "9.12.1"
   },
   "config": {
