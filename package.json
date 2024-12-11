@@ -39,7 +39,7 @@
     "vue-eslint-parser": "^9.4.3"
   },
   "peerDependencies": {
-    "eslint": ">= 9.15.0"
+    "eslint": ">= 9.16.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
