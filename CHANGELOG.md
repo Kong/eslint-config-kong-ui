@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Kong/eslint-config-kong-ui/compare/v1.1.6...v1.2.0) (2025-01-03)
+
+
+### Features
+
+* **stylistic:** enforce member delimiter style ([#17](https://github.com/Kong/eslint-config-kong-ui/issues/17)) ([5e011d8](https://github.com/Kong/eslint-config-kong-ui/commit/5e011d8194836a8e0f048481e5b215635482ab75))
+
 ## [1.1.6](https://github.com/Kong/eslint-config-kong-ui/compare/v1.1.5...v1.1.6) (2024-12-24)
 
 
