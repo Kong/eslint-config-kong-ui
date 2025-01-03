@@ -27,7 +27,7 @@ importers:
         specifier: ^2.18.2
         version: 2.18.2(eslint@9.17.0(jiti@1.21.3))
       eslint-plugin-n:
-        specifier: ^17.15.0
+        specifier: ^17.15.1
         version: 17.15.1(eslint@9.17.0(jiti@1.21.3))
       eslint-plugin-promise:
         specifier: ^6.6.0
@@ -42,7 +42,7 @@ importers:
         specifier: ^2.4.0
         version: 2.4.0
       typescript-eslint:
-        specifier: ^8.18.0
+        specifier: ^8.18.1
         version: 8.18.1(eslint@9.17.0(jiti@1.21.3))(typescript@5.4.5)
       vue-eslint-parser:
         specifier: ^9.4.3
