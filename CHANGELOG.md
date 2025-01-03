@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Kong/eslint-config-kong-ui/compare/v1.2.0...v1.2.1) (2025-01-03)
+
+
+### Bug Fixes
+
+* allow empty interfaces with a single extends ([9de96db](https://github.com/Kong/eslint-config-kong-ui/commit/9de96db46565290d602a38c1e5a1e66d48edcf22))
+
 # [1.2.0](https://github.com/Kong/eslint-config-kong-ui/compare/v1.1.6...v1.2.0) (2025-01-03)
 
 
