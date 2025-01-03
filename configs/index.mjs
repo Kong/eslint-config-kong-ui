@@ -63,6 +63,19 @@ export default [
         avoidEscape: true,
       }],
       '@stylistic/semi': ['error', 'never'],
+      '@stylistic/member-delimiter-style': [
+        'error',
+        {
+          'multiline': {
+            'delimiter': 'none', // No delimiter for multiline
+            'requireLast': false,
+          },
+          'singleline': {
+            'delimiter': 'comma', // Use a comma for single-line
+            'requireLast': false,
+          },
+        },
+      ],
       '@stylistic/space-before-function-paren': ['error', {
         anonymous: 'never',
         named: 'never',
