@@ -110,6 +110,9 @@ export default [
         ignoreLastCallback: true,
       }],
       '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-empty-object-type': ['error', {
+        allowInterfaces: 'with-single-extends',
+      }],
       'vue/attributes-order': ['error', {
         alphabetical: true,
       }],
