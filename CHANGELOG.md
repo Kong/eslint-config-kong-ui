@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/Kong/eslint-config-kong-ui/compare/v1.2.2...v1.2.3) (2025-01-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency typescript-eslint to ^8.19.0 ([#18](https://github.com/Kong/eslint-config-kong-ui/issues/18)) ([dfbb700](https://github.com/Kong/eslint-config-kong-ui/commit/dfbb700619793ba4844cc5e328bae84550c86cd4))
+
 ## [1.2.2](https://github.com/Kong/eslint-config-kong-ui/compare/v1.2.1...v1.2.2) (2025-01-03)
 
 
