@@ -58,14 +58,14 @@ importers:
         specifier: ^8.0.1
         version: 8.0.1(@types/node@20.14.2)(typescript@5.4.5)
       '@evilmartians/lefthook':
-        specifier: ^1.6.15
-        version: 1.6.15
+        specifier: ^1.6.22
+        version: 1.10.5
       '@semantic-release/changelog':
         specifier: ^6.0.3
         version: 6.0.3(semantic-release@24.0.0(typescript@5.4.5))
       commitizen:
-        specifier: ^4.3.0
-        version: 4.3.0(@types/node@20.14.2)(typescript@5.4.5)
+        specifier: ^4.3.1
+        version: 4.3.1(@types/node@20.14.2)(typescript@5.4.5)
       cz-conventional-changelog:
         specifier: ^3.3.0
         version: 3.3.0(@types/node@20.14.2)(typescript@5.4.5)
@@ -216,8 +216,8 @@ packages:
     resolution: {integrity: sha512-2b/g5hRmpbb1o4GnTZax9N9m0FXzz9OV42ZzI4rDDMDuHUqigAiQCEWChBWCY4ztAGVRjoWT19v0yMmc5/L5kA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@evilmartians/lefthook@1.6.15':
-    resolution: {integrity: sha512-NEa9LHESB+2SpXWi/8inerXuZu47r6tN/IrpLCgqUdD+blfnvt+rGb/A1QFOsBVS3kBh6+u/kMvhhU8WutplJQ==}
+  '@evilmartians/lefthook@1.10.5':
+    resolution: {integrity: sha512-AvK8fa9FCwIhOYfJy4kalbRdBesGx/1QDZwBbJTjycJRW0HpUMgQm3XrN2nY2HMu9zV4RVqIZjk0dRVFOiQuoQ==}
     cpu: [x64, arm64, ia32]
     os: [darwin, linux, win32]
     hasBin: true
@@ -678,8 +678,8 @@ packages:
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
 
-  commitizen@4.3.0:
-    resolution: {integrity: sha512-H0iNtClNEhT0fotHvGV3E9tDejDeS04sN1veIebsKYGMuGscFaswRoYJKmT3eW85eIJAs0F28bG2+a/9wCOfPw==}
+  commitizen@4.3.1:
+    resolution: {integrity: sha512-gwAPAVTy/j5YcOOebcCRIijn+mSjWJC+IYKivTu6aG8Ei/scoXgfsMRnuAk6b0GRste2J4NGxVdMN3ZpfNaVaw==}
     engines: {node: '>= 12'}
     hasBin: true
 
@@ -2628,7 +2628,7 @@ snapshots:
     dependencies:
       boxen: 5.1.2
       chalk: 2.4.2
-      commitizen: 4.3.0(@types/node@20.14.2)(typescript@5.4.5)
+      commitizen: 4.3.1(@types/node@20.14.2)(typescript@5.4.5)
       cz-conventional-changelog: 3.3.0(@types/node@20.14.2)(typescript@5.4.5)
       inquirer: 8.2.6
       lodash.map: 4.6.0
@@ -2689,7 +2689,7 @@ snapshots:
     dependencies:
       levn: 0.4.1
 
-  '@evilmartians/lefthook@1.6.15': {}
+  '@evilmartians/lefthook@1.10.5': {}
 
   '@humanfs/core@0.19.1': {}
 
@@ -3247,7 +3247,7 @@ snapshots:
 
   color-name@1.1.4: {}
 
-  commitizen@4.3.0(@types/node@20.14.2)(typescript@5.4.5):
+  commitizen@4.3.1(@types/node@20.14.2)(typescript@5.4.5):
     dependencies:
       cachedir: 2.3.0
       cz-conventional-changelog: 3.3.0(@types/node@20.14.2)(typescript@5.4.5)
@@ -3349,7 +3349,7 @@ snapshots:
   cz-conventional-changelog@3.3.0(@types/node@20.14.2)(typescript@5.4.5):
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.3.0(@types/node@20.14.2)(typescript@5.4.5)
+      commitizen: 4.3.1(@types/node@20.14.2)(typescript@5.4.5)
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
