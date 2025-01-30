@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/Kong/eslint-config-kong-ui/compare/v1.2.4...v1.2.5) (2025-01-30)
+
+
+### Bug Fixes
+
+* **deps:** update eslint ([#26](https://github.com/Kong/eslint-config-kong-ui/issues/26)) ([8553550](https://github.com/Kong/eslint-config-kong-ui/commit/8553550788ba509a95b6bf048fead677aa5bf2ab))
+
 ## [1.2.4](https://github.com/Kong/eslint-config-kong-ui/compare/v1.2.3...v1.2.4) (2025-01-17)
 
 
