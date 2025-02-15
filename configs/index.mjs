@@ -32,7 +32,7 @@ export default [
       '**/.output/',
       '**/.wrangler/',
       '**/.vitepress/cache/',
-      '**/playwright-report/,
+      '**/playwright-report/',
     ],
   },
   {
