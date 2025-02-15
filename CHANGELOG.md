@@ -1,3 +1,11 @@
+## [1.2.6](https://github.com/Kong/eslint-config-kong-ui/compare/v1.2.5...v1.2.6) (2025-02-15)
+
+
+### Bug Fixes
+
+* **ignores:** playwright-report directory ([807bb50](https://github.com/Kong/eslint-config-kong-ui/commit/807bb50eb5695ea6eae64e6a58cc972b50e8cc06))
+* syntax ([563d21e](https://github.com/Kong/eslint-config-kong-ui/commit/563d21eafb67f31ef828194448d8860e6490ec3e))
+
 ## [1.2.5](https://github.com/Kong/eslint-config-kong-ui/compare/v1.2.4...v1.2.5) (2025-01-30)
 
 
