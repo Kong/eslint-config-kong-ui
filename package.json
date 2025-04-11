@@ -54,6 +54,11 @@
     "eslint": "^9.23.0",
     "semantic-release": "^24.2.1"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@evilmartians/lefthook"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kong/eslint-config-kong-ui.git"
