@@ -3,6 +3,8 @@ import tseslint from 'typescript-eslint'
 import vueParser from 'vue-eslint-parser'
 import pluginVue from 'eslint-plugin-vue'
 import stylistic from '@stylistic/eslint-plugin'
+import stylisticJs from '@stylistic/eslint-plugin-js'
+import stylisticTs from '@stylistic/eslint-plugin-ts'
 import globals from 'globals'
 
 // Compatibility utils
@@ -54,6 +56,8 @@ export default [
     },
     plugins: {
       '@stylistic': stylistic,
+      '@stylistic/js': stylisticJs,
+      '@stylistic/ts': stylisticTs,
     },
     ignores: [
       '**/locales/**/*.json',
@@ -91,6 +95,10 @@ export default [
         objectsInArrays: false,
       }],
       '@stylistic/object-curly-spacing': ['error', 'always', {
+        arraysInObjects: true,
+        objectsInObjects: true,
+      }],
+      '@stylistic/template-curly-spacing': ['error', 'never', {
         arraysInObjects: true,
         objectsInObjects: true,
       }],

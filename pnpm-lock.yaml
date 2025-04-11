@@ -20,6 +20,12 @@ importers:
       '@stylistic/eslint-plugin':
         specifier: ^2.13.0
         version: 2.13.0(eslint@9.24.0(jiti@2.4.2))(typescript@5.4.5)
+      '@stylistic/eslint-plugin-js':
+        specifier: ^4.2.0
+        version: 4.2.0(eslint@9.24.0(jiti@2.4.2))
+      '@stylistic/eslint-plugin-ts':
+        specifier: ^4.2.0
+        version: 4.2.0(eslint@9.24.0(jiti@2.4.2))(typescript@5.4.5)
       eslint-plugin-cypress:
         specifier: ^3.6.0
         version: 3.6.0(eslint@9.24.0(jiti@2.4.2))
@@ -246,7 +252,6 @@ packages:
 
   '@evilmartians/lefthook@1.10.5':
     resolution: {integrity: sha512-AvK8fa9FCwIhOYfJy4kalbRdBesGx/1QDZwBbJTjycJRW0HpUMgQm3XrN2nY2HMu9zV4RVqIZjk0dRVFOiQuoQ==}
-    cpu: [x64, arm64, ia32]
     os: [darwin, linux, win32]
     hasBin: true
 
@@ -394,6 +399,18 @@ packages:
   '@sindresorhus/merge-streams@4.0.0':
     resolution: {integrity: sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ==}
     engines: {node: '>=18'}
+
+  '@stylistic/eslint-plugin-js@4.2.0':
+    resolution: {integrity: sha512-MiJr6wvyzMYl/wElmj8Jns8zH7Q1w8XoVtm+WM6yDaTrfxryMyb8n0CMxt82fo42RoLIfxAEtM6tmQVxqhk0/A==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: '>=9.0.0'
+
+  '@stylistic/eslint-plugin-ts@4.2.0':
+    resolution: {integrity: sha512-j2o2GvOx9v66x8hmp/HJ+0T+nOppiO5ycGsCkifh7JPGgjxEhpkGmIGx3RWsoxpWbad3VCX8e8/T8n3+7ze1Zg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: '>=9.0.0'
 
   '@stylistic/eslint-plugin@2.13.0':
     resolution: {integrity: sha512-RnO1SaiCFHn666wNz2QfZEFxvmiNRqhzaMXHXxXXKt+MEP7aajlPxUSMIQpKAaJfverpovEYqjBOXDq6dDcaOQ==}
@@ -2963,6 +2980,22 @@ snapshots:
   '@sindresorhus/merge-streams@2.3.0': {}
 
   '@sindresorhus/merge-streams@4.0.0': {}
+
+  '@stylistic/eslint-plugin-js@4.2.0(eslint@9.24.0(jiti@2.4.2))':
+    dependencies:
+      eslint: 9.24.0(jiti@2.4.2)
+      eslint-visitor-keys: 4.2.0
+      espree: 10.3.0
+
+  '@stylistic/eslint-plugin-ts@4.2.0(eslint@9.24.0(jiti@2.4.2))(typescript@5.4.5)':
+    dependencies:
+      '@typescript-eslint/utils': 8.29.0(eslint@9.24.0(jiti@2.4.2))(typescript@5.4.5)
+      eslint: 9.24.0(jiti@2.4.2)
+      eslint-visitor-keys: 4.2.0
+      espree: 10.3.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
 
   '@stylistic/eslint-plugin@2.13.0(eslint@9.24.0(jiti@2.4.2))(typescript@5.4.5)':
     dependencies:
