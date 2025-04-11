@@ -98,10 +98,7 @@ export default [
         arraysInObjects: true,
         objectsInObjects: true,
       }],
-      '@stylistic/template-curly-spacing': ['error', 'never', {
-        arraysInObjects: true,
-        objectsInObjects: true,
-      }],
+      '@stylistic/template-curly-spacing': ['error', 'never'],
       '@stylistic/padded-blocks': 'off',
       '@stylistic/no-trailing-spaces': 'error',
       '@stylistic/no-multi-spaces': 'error',
