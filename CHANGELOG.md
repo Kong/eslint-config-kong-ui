@@ -1,3 +1,11 @@
+## [1.2.8](https://github.com/Kong/eslint-config-kong-ui/compare/v1.2.7...v1.2.8) (2025-04-29)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies with stable version ([#24](https://github.com/Kong/eslint-config-kong-ui/issues/24)) ([1c55dc9](https://github.com/Kong/eslint-config-kong-ui/commit/1c55dc9793e14b97321402c8e08b26a29dd1eee9))
+* **deps:** update dependency @stylistic/eslint-plugin to v4 ([#30](https://github.com/Kong/eslint-config-kong-ui/issues/30)) ([30941de](https://github.com/Kong/eslint-config-kong-ui/commit/30941de3a07eef1addc734148aeea91e23a54b41))
+
 ## [1.2.7](https://github.com/Kong/eslint-config-kong-ui/compare/v1.2.6...v1.2.7) (2025-04-11)
 
 
