@@ -1,3 +1,10 @@
+## [1.2.9](https://github.com/Kong/eslint-config-kong-ui/compare/v1.2.8...v1.2.9) (2025-05-08)
+
+
+### Bug Fixes
+
+* **ignores:** test directories ([c9241da](https://github.com/Kong/eslint-config-kong-ui/commit/c9241dac8c49425a98cb671db9711f799442d981))
+
 ## [1.2.8](https://github.com/Kong/eslint-config-kong-ui/compare/v1.2.7...v1.2.8) (2025-04-29)
 
 
