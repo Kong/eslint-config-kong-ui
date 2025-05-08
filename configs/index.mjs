@@ -33,6 +33,7 @@ export default [
       '**/.wrangler/',
       '**/.vitepress/cache/',
       '**/playwright-report/',
+      '**/test-results/',
     ],
   },
   {
