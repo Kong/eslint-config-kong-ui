@@ -1,6 +1,6 @@
 {
   "name": "@kong/eslint-config-kong-ui",
-  "version": "1.2.7",
+  "version": "1.2.9",
   "description": "Sharable ESLint configuration for Kong's frontend repositories",
   "main": "configs/index.mjs",
   "type": "module",
@@ -27,15 +27,13 @@
     "@eslint/compat": "^1.2.4",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.23.0",
-    "@stylistic/eslint-plugin": "^2.13.0",
-    "@stylistic/eslint-plugin-js": "^4.2.0",
-    "@stylistic/eslint-plugin-ts": "^4.2.0",
+    "@stylistic/eslint-plugin": "^4.2.0",
     "eslint-plugin-cypress": "^3.6.0",
     "eslint-plugin-jsonc": "^2.20.0",
     "eslint-plugin-n": "^17.17.0",
     "eslint-plugin-promise": "^6.6.0",
     "eslint-plugin-vue": "^9.33.0",
-    "globals": "^15.14.0",
+    "globals": "^15.15.0",
     "jsonc-eslint-parser": "^2.4.0",
     "typescript-eslint": "^8.28.0",
     "vue-eslint-parser": "^9.4.3"
@@ -44,10 +42,10 @@
     "eslint": ">= 9.23.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.6.1",
-    "@commitlint/config-conventional": "^19.6.0",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
     "@digitalroute/cz-conventional-changelog-for-jira": "^8.0.1",
-    "@evilmartians/lefthook": "^1.6.22",
+    "@evilmartians/lefthook": "^1.11.10",
     "@semantic-release/changelog": "^6.0.3",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
@@ -120,7 +118,7 @@
     "node": ">=18.0.0 || >=20.13.1"
   },
   "volta": {
-    "node": "22.12.0",
+    "node": "22.14.0",
     "pnpm": "9.15.2"
   },
   "config": {
