@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Kong/eslint-config-kong-ui/compare/v1.2.9...v1.3.0) (2025-06-24)
+
+
+### Features
+
+* template-curly-spacing ([#32](https://github.com/Kong/eslint-config-kong-ui/issues/32)) ([c7c9ce2](https://github.com/Kong/eslint-config-kong-ui/commit/c7c9ce2726d76b66e89aaa5283f19d93a83c1cf0))
+
 ## [1.2.9](https://github.com/Kong/eslint-config-kong-ui/compare/v1.2.8...v1.2.9) (2025-05-08)
 
 
