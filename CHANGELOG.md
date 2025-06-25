@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/Kong/eslint-config-kong-ui/compare/v1.3.0...v1.3.1) (2025-06-25)
+
+
+### Bug Fixes
+
+* **deps:** remove deprecated dependencies ([#39](https://github.com/Kong/eslint-config-kong-ui/issues/39)) ([ae8671f](https://github.com/Kong/eslint-config-kong-ui/commit/ae8671ffa10e016ae1f70ed93a00a131f03e1e53))
+
 # [1.3.0](https://github.com/Kong/eslint-config-kong-ui/compare/v1.2.9...v1.3.0) (2025-06-24)
 
 
