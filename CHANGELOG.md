@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/Kong/eslint-config-kong-ui/compare/v1.3.1...v1.4.0) (2025-06-26)
+
+
+### Features
+
+* enable array-types with array-simple option ([#38](https://github.com/Kong/eslint-config-kong-ui/issues/38)) ([7534bb7](https://github.com/Kong/eslint-config-kong-ui/commit/7534bb7dda6eb9b1d6f80fa7d1904c441889e4f9))
+
 ## [1.3.1](https://github.com/Kong/eslint-config-kong-ui/compare/v1.3.0...v1.3.1) (2025-06-25)
 
 
