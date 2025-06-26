@@ -2,24 +2,15 @@ import eslint from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import vueParser from 'vue-eslint-parser'
 import pluginVue from 'eslint-plugin-vue'
+import pluginPromise from 'eslint-plugin-promise'
 import stylistic from '@stylistic/eslint-plugin'
 import globals from 'globals'
-
-// Compatibility utils
-import { FlatCompat } from '@eslint/eslintrc'
-import { fixupConfigRules } from '@eslint/compat'
-const compat = new FlatCompat()
 
 export default [
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   ...pluginVue.configs['flat/recommended'],
-  // See here for compatibility: https://github.com/eslint-community/eslint-plugin-promise/issues/449#issuecomment-2108572139
-  ...fixupConfigRules(
-    compat.config({
-      extends: ['plugin:promise/recommended'],
-    }),
-  ),
+  pluginPromise.configs['flat/recommended'],
   // Global ignores
   {
     ignores: [

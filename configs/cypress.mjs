@@ -1,15 +1,10 @@
 import eslintKongUiConfig from './index.mjs'
-
-// Compatibility utils
-import { FlatCompat } from '@eslint/eslintrc'
-const compat = new FlatCompat()
+import pluginCypress from 'eslint-plugin-cypress'
 
 export default [
   // Use the main config for all files
   ...eslintKongUiConfig,
-  ...compat.config({
-    extends: ['plugin:cypress/recommended'],
-  }),
+  pluginCypress.configs.recommended,
   {
     rules: {
       'promise/always-return': 'off',
