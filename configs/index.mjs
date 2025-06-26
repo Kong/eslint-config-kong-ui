@@ -134,6 +134,9 @@ export default [
         minimumDescriptionLength: 10,
       }],
       '@typescript-eslint/no-unused-vars': 'warn',
+      '@typescript-eslint/array-type': ['error', {
+        default: 'array-simple',
+      }],
       'vue/no-restricted-static-attribute': ['error',
         {
           key: 'data-test-id',
