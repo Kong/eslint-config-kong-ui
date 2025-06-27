@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/Kong/eslint-config-kong-ui/compare/v1.4.0...v1.4.1) (2025-06-27)
+
+
+### Bug Fixes
+
+* **deps:** update major version for promise and cypress plugins ([#40](https://github.com/Kong/eslint-config-kong-ui/issues/40)) ([76e54c8](https://github.com/Kong/eslint-config-kong-ui/commit/76e54c86cc1e0c7d694055a807fb23b62de1dbc2))
+
 # [1.4.0](https://github.com/Kong/eslint-config-kong-ui/compare/v1.3.1...v1.4.0) (2025-06-26)
 
 
