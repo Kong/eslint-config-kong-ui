@@ -107,7 +107,7 @@ export default [
   // anything from here will override eslintKongUiConfig
   {
     rules: {
-        'no-unused-vars': 'error',
+      'no-unused-vars': 'error',
     }
   }
 ]
