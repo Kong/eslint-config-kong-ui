@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/Kong/eslint-config-kong-ui/compare/v1.5.0...v1.5.1) (2025-06-30)
+
+
+### Bug Fixes
+
+* allow single-line in vue templates ([#42](https://github.com/Kong/eslint-config-kong-ui/issues/42)) ([e359477](https://github.com/Kong/eslint-config-kong-ui/commit/e359477c5592617171cd25192bd23ef9857a9bc0))
+
 # [1.5.0](https://github.com/Kong/eslint-config-kong-ui/compare/v1.4.1...v1.5.0) (2025-06-30)
 
 
