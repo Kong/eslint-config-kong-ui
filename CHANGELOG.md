@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/Kong/eslint-config-kong-ui/compare/v1.4.1...v1.5.0) (2025-06-30)
+
+
+### Features
+
+* enable stylistic rules in vue templates, add 3 spacing rules ([#41](https://github.com/Kong/eslint-config-kong-ui/issues/41)) ([dff7f1c](https://github.com/Kong/eslint-config-kong-ui/commit/dff7f1c463b3e24e09c14501e467ca521359a562))
+
 ## [1.4.1](https://github.com/Kong/eslint-config-kong-ui/compare/v1.4.0...v1.4.1) (2025-06-27)
 
 
