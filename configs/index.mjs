@@ -86,7 +86,6 @@ const vueStylisticRules = buildVueStylisticRules(stylisticRules, [
   // See: https://eslint.vuejs.org/rules/#extension-rules.
   'array-bracket-spacing',
   'arrow-spacing',
-  'brace-style',
   'comma-dangle',
   'comma-spacing',
   ['func-call-spacing', 'function-call-spacing'], // alias
@@ -175,6 +174,10 @@ export default [
       '@typescript-eslint/no-unused-vars': 'warn',
       '@typescript-eslint/array-type': ['error', {
         default: 'array-simple',
+      }],
+      // We only allow single-line in Vue templates.
+      'vue/brace-style': ['error', '1tbs', {
+        allowSingleLine: true,
       }],
       'vue/no-restricted-static-attribute': ['error',
         {
