@@ -6,6 +6,97 @@ import pluginPromise from 'eslint-plugin-promise'
 import stylistic from '@stylistic/eslint-plugin'
 import globals from 'globals'
 
+const stylisticRules = {
+  '@stylistic/indent': ['error', 2],
+  '@stylistic/quotes': ['error', 'single', {
+    avoidEscape: true,
+  }],
+  '@stylistic/semi': ['error', 'never'],
+  '@stylistic/member-delimiter-style': [
+    'error',
+    {
+      'multiline': {
+        'delimiter': 'none', // No delimiter for multiline
+        'requireLast': false,
+      },
+      'singleline': {
+        'delimiter': 'comma', // Use a comma for single-line
+        'requireLast': false,
+      },
+    },
+  ],
+  '@stylistic/space-before-function-paren': ['error', {
+    anonymous: 'never',
+    named: 'never',
+    asyncArrow: 'always',
+  }],
+  '@stylistic/comma-dangle': ['error', 'always-multiline'],
+  // Ensures ESLint understands that `defineEmits<{ ... }>()` does _not_ fail this rule.
+  '@stylistic/function-call-spacing': ['error', 'never'],
+  '@stylistic/brace-style': ['error', '1tbs'],
+  '@stylistic/array-bracket-spacing': ['error', 'never', {
+    singleValue: false,
+    objectsInArrays: false,
+  }],
+  '@stylistic/object-curly-spacing': ['error', 'always', {
+    arraysInObjects: true,
+    objectsInObjects: true,
+  }],
+  '@stylistic/template-curly-spacing': ['error', 'never'],
+  '@stylistic/padded-blocks': 'off',
+  '@stylistic/no-trailing-spaces': 'error',
+  '@stylistic/no-multi-spaces': 'error',
+  '@stylistic/space-before-blocks': ['error', 'always'],
+  '@stylistic/space-infix-ops': ['error', { 'int32Hint': false }],
+  '@stylistic/keyword-spacing': ['error', {
+    before: true,
+    after: true,
+  }],
+  '@stylistic/arrow-spacing': ['error', {
+    before: true,
+    after: true,
+  }],
+  '@stylistic/comma-spacing': ['error', {
+    before: false,
+    after: true,
+  }],
+  '@stylistic/key-spacing': ['error', {
+    beforeColon: false,
+    afterColon: true,
+  }],
+}
+
+// Create vue/* rules from @stylistic/* rules
+function buildVueStylisticRules(rules, suffixes) {
+  return Object.fromEntries(
+    suffixes.flatMap((item) => {
+      const [vueSuffix, stylisticSuffix] = Array.isArray(item)
+        ? item
+        : [item, item]
+      const key = `@stylistic/${stylisticSuffix}`
+      return key in rules ? [[`vue/${vueSuffix}`, rules[key]]] : []
+    }),
+  )
+}
+
+const vueStylisticRules = buildVueStylisticRules(stylisticRules, [
+  // These are extension rules from eslint-plugin-vue (not included in `pluginVue.configs['flat/recommended']`)
+  // and are part of the stylistic rules. So we need to include them here so that we have consistent
+  // stylistic rules across both scripts and templates.
+  // See: https://eslint.vuejs.org/rules/#extension-rules.
+  'array-bracket-spacing',
+  'arrow-spacing',
+  'brace-style',
+  'comma-dangle',
+  'comma-spacing',
+  ['func-call-spacing', 'function-call-spacing'], // alias
+  'key-spacing',
+  'keyword-spacing',
+  'object-curly-spacing',
+  'space-infix-ops',
+  'template-curly-spacing',
+])
+
 export default [
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
@@ -51,51 +142,8 @@ export default [
       '**/locales/**/*.json',
     ],
     rules: {
-      '@stylistic/indent': ['error', 2],
-      '@stylistic/quotes': ['error', 'single', {
-        avoidEscape: true,
-      }],
-      '@stylistic/semi': ['error', 'never'],
-      '@stylistic/member-delimiter-style': [
-        'error',
-        {
-          'multiline': {
-            'delimiter': 'none', // No delimiter for multiline
-            'requireLast': false,
-          },
-          'singleline': {
-            'delimiter': 'comma', // Use a comma for single-line
-            'requireLast': false,
-          },
-        },
-      ],
-      '@stylistic/space-before-function-paren': ['error', {
-        anonymous: 'never',
-        named: 'never',
-        asyncArrow: 'always',
-      }],
-      '@stylistic/comma-dangle': ['error', 'always-multiline'],
-      // Ensures ESLint understands that `defineEmits<{ ... }>()` does _not_ fail this rule.
-      '@stylistic/function-call-spacing': ['error', 'never'],
-      '@stylistic/brace-style': ['error', '1tbs'],
-      '@stylistic/array-bracket-spacing': ['error', 'never', {
-        singleValue: false,
-        objectsInArrays: false,
-      }],
-      '@stylistic/object-curly-spacing': ['error', 'always', {
-        arraysInObjects: true,
-        objectsInObjects: true,
-      }],
-      '@stylistic/template-curly-spacing': ['error', 'never'],
-      '@stylistic/padded-blocks': 'off',
-      '@stylistic/no-trailing-spaces': 'error',
-      '@stylistic/no-multi-spaces': 'error',
-      '@stylistic/space-before-blocks': ['error', 'always'],
-      '@stylistic/space-infix-ops': ['error', { 'int32Hint': false }],
-      '@stylistic/keyword-spacing': ['error', {
-        before: true,
-        after: true,
-      }],
+      ...stylisticRules,
+      ...vueStylisticRules,
       'no-unused-vars': 'off',
       camelcase: 'off',
       'no-console': 'off',
