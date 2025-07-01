@@ -18,8 +18,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(eslint@9.24.0(jiti@2.4.2))
       eslint-plugin-jsonc:
-        specifier: ^2.20.0
-        version: 2.20.0(eslint@9.24.0(jiti@2.4.2))
+        specifier: ^2.20.1
+        version: 2.20.1(eslint@9.24.0(jiti@2.4.2))
       eslint-plugin-n:
         specifier: ^17.17.0
         version: 17.17.0(eslint@9.24.0(jiti@2.4.2))
@@ -237,6 +237,7 @@ packages:
 
   '@evilmartians/lefthook@1.11.11':
     resolution: {integrity: sha512-3XRY+3WWUQKEtRBUlaVFIGPD8lLOcJ/6zy6quCM9prH61ueKh4YxyPV2+Dy3sCogSlk2vGmmJUmmtJTJlpKuJw==}
+    cpu: [x64, arm64, ia32]
     os: [darwin, linux, win32]
     hasBin: true
 
@@ -937,8 +938,8 @@ packages:
     peerDependencies:
       eslint: '>=8'
 
-  eslint-plugin-jsonc@2.20.0:
-    resolution: {integrity: sha512-FRgCn9Hzk5eKboCbVMrr9QrhM0eO4G+WKH8IFXoaeqhM/2kuWzbStJn4kkr0VWL8J5H8RYZF+Aoam1vlBaZVkw==}
+  eslint-plugin-jsonc@2.20.1:
+    resolution: {integrity: sha512-gUzIwQHXx7ZPypUoadcyRi4WbHW2TPixDr0kqQ4miuJBU0emJmyGTlnaT3Og9X2a8R1CDayN9BFSq5weGWbTng==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
@@ -3596,13 +3597,13 @@ snapshots:
       eslint: 9.24.0(jiti@2.4.2)
       eslint-compat-utils: 0.5.1(eslint@9.24.0(jiti@2.4.2))
 
-  eslint-plugin-jsonc@2.20.0(eslint@9.24.0(jiti@2.4.2)):
+  eslint-plugin-jsonc@2.20.1(eslint@9.24.0(jiti@2.4.2)):
     dependencies:
-      '@eslint-community/eslint-utils': 4.5.1(eslint@9.24.0(jiti@2.4.2))
+      '@eslint-community/eslint-utils': 4.7.0(eslint@9.24.0(jiti@2.4.2))
       eslint: 9.24.0(jiti@2.4.2)
       eslint-compat-utils: 0.6.4(eslint@9.24.0(jiti@2.4.2))
       eslint-json-compat-utils: 0.2.1(eslint@9.24.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0)
-      espree: 10.3.0
+      espree: 10.4.0
       graphemer: 1.4.0
       jsonc-eslint-parser: 2.4.0
       natural-compare: 1.4.0
