@@ -52,8 +52,8 @@ importers:
         specifier: ^8.0.1
         version: 8.0.1(@types/node@20.14.2)(typescript@5.4.5)
       '@evilmartians/lefthook':
-        specifier: ^1.11.10
-        version: 1.11.11
+        specifier: ^1.12.2
+        version: 1.12.3
       '@semantic-release/changelog':
         specifier: ^6.0.3
         version: 6.0.3(semantic-release@24.2.1(typescript@5.4.5))
@@ -225,8 +225,8 @@ packages:
     resolution: {integrity: sha512-Z5kJ+wU3oA7MMIqVR9tyZRtjYPr4OC004Q4Rw7pgOKUOKkJfZ3O24nz3WYfGRpMDNmcOi3TwQOmgm7B7Tpii0w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@evilmartians/lefthook@1.11.11':
-    resolution: {integrity: sha512-3XRY+3WWUQKEtRBUlaVFIGPD8lLOcJ/6zy6quCM9prH61ueKh4YxyPV2+Dy3sCogSlk2vGmmJUmmtJTJlpKuJw==}
+  '@evilmartians/lefthook@1.12.3':
+    resolution: {integrity: sha512-MtXIt8h+EVTv5tCGLzh9UwbA/LRv6esdPJOHlxr8NDKHbFnbo8PvU5uVQcm3PAQTd4DZN3HoyokqrwGwntoq6w==}
     cpu: [x64, arm64, ia32]
     os: [darwin, linux, win32]
     hasBin: true
@@ -2752,7 +2752,7 @@ snapshots:
       '@eslint/core': 0.15.2
       levn: 0.4.1
 
-  '@evilmartians/lefthook@1.11.11': {}
+  '@evilmartians/lefthook@1.12.3': {}
 
   '@humanfs/core@0.19.1': {}
 
