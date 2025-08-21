@@ -24,20 +24,20 @@
     "commit": "cz"
   },
   "dependencies": {
-    "@eslint/js": "^9.23.0",
-    "@stylistic/eslint-plugin": "^5.0.0",
+    "@eslint/js": "^9.32.0",
+    "@stylistic/eslint-plugin": "^5.2.2",
     "eslint-plugin-cypress": "^5.1.0",
     "eslint-plugin-jsonc": "^2.20.0",
-    "eslint-plugin-n": "^17.17.0",
+    "eslint-plugin-n": "^17.21.3",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-vue": "^9.33.0",
     "globals": "^15.15.0",
     "jsonc-eslint-parser": "^2.4.0",
-    "typescript-eslint": "^8.28.0",
+    "typescript-eslint": "^8.39.0",
     "vue-eslint-parser": "^9.4.3"
   },
   "peerDependencies": {
-    "eslint": ">= 9.23.0"
+    "eslint": ">= 9.32.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
@@ -47,7 +47,7 @@
     "@semantic-release/changelog": "^6.0.3",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.23.0",
+    "eslint": "^9.32.0",
     "semantic-release": "^24.2.1"
   },
   "pnpm": {
