@@ -17,6 +17,11 @@ on:
   # Allow calling manually from GitHub
   workflow_dispatch:
 
+permissions:
+  id-token: write
+  contents: read
+  actions: read
+
 jobs:
   run-tests:
     name: Tests
