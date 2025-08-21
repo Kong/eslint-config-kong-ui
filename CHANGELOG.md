@@ -1,3 +1,31 @@
+## [1.5.5](https://github.com/Kong/eslint-config-kong-ui/compare/v1.5.4...v1.5.5) (2025-08-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency vue-eslint-parser to v10 ([#36](https://github.com/Kong/eslint-config-kong-ui/issues/36)) ([6911003](https://github.com/Kong/eslint-config-kong-ui/commit/6911003f240982ec629fb39a72c540e88f9b8d0b))
+
+## [1.5.4](https://github.com/Kong/eslint-config-kong-ui/compare/v1.5.3...v1.5.4) (2025-08-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-vue to v10 ([#34](https://github.com/Kong/eslint-config-kong-ui/issues/34)) ([a58921a](https://github.com/Kong/eslint-config-kong-ui/commit/a58921a40d39cd3f7b3a7927b0ade7390877f292))
+
+## [1.5.3](https://github.com/Kong/eslint-config-kong-ui/compare/v1.5.2...v1.5.3) (2025-08-21)
+
+
+### Bug Fixes
+
+* **deps:** update eslint ([#16](https://github.com/Kong/eslint-config-kong-ui/issues/16)) ([7256f69](https://github.com/Kong/eslint-config-kong-ui/commit/7256f697a2aabfb3dbb52147f9c02bb768a33d34))
+
+## [1.5.2](https://github.com/Kong/eslint-config-kong-ui/compare/v1.5.1...v1.5.2) (2025-08-21)
+
+
+### Bug Fixes
+
+* **deps:** update eslint ([#33](https://github.com/Kong/eslint-config-kong-ui/issues/33)) ([8a59e1e](https://github.com/Kong/eslint-config-kong-ui/commit/8a59e1ec9ade71f37cdac8ead1ad80f0915a42d3))
+
 ## [1.5.1](https://github.com/Kong/eslint-config-kong-ui/compare/v1.5.0...v1.5.1) (2025-06-30)
 
 

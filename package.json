@@ -1,6 +1,6 @@
 {
   "name": "@kong/eslint-config-kong-ui",
-  "version": "1.5.1",
+  "version": "1.5.5",
   "description": "Sharable ESLint configuration for Kong's frontend repositories",
   "main": "configs/index.mjs",
   "type": "module",
@@ -24,31 +24,31 @@
     "commit": "cz"
   },
   "dependencies": {
-    "@eslint/js": "^9.23.0",
-    "@stylistic/eslint-plugin": "^5.0.0",
+    "@eslint/js": "^9.33.0",
+    "@stylistic/eslint-plugin": "^5.2.3",
     "eslint-plugin-cypress": "^5.1.0",
-    "eslint-plugin-jsonc": "^2.20.0",
-    "eslint-plugin-n": "^17.17.0",
+    "eslint-plugin-jsonc": "^2.20.1",
+    "eslint-plugin-n": "^17.21.3",
     "eslint-plugin-promise": "^7.2.1",
-    "eslint-plugin-vue": "^9.33.0",
+    "eslint-plugin-vue": "^10.4.0",
     "globals": "^15.15.0",
     "jsonc-eslint-parser": "^2.4.0",
-    "typescript-eslint": "^8.28.0",
-    "vue-eslint-parser": "^9.4.3"
+    "typescript-eslint": "^8.39.0",
+    "vue-eslint-parser": "^10.2.0"
   },
   "peerDependencies": {
-    "eslint": ">= 9.23.0"
+    "eslint": ">= 9.32.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.8.0",
-    "@commitlint/config-conventional": "^19.8.0",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@digitalroute/cz-conventional-changelog-for-jira": "^8.0.1",
-    "@evilmartians/lefthook": "^1.11.10",
+    "@evilmartians/lefthook": "^1.11.16",
     "@semantic-release/changelog": "^6.0.3",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.23.0",
-    "semantic-release": "^24.2.1"
+    "eslint": "^9.33.0",
+    "semantic-release": "^24.2.7"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
@@ -97,7 +97,12 @@
           "changelogFile": "CHANGELOG.md"
         }
       ],
-      "@semantic-release/npm",
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false
+        }
+      ],
       [
         "@semantic-release/git",
         {
@@ -113,10 +118,10 @@
     ]
   },
   "engines": {
-    "node": ">=18.0.0 || >=20.13.1"
+    "node": ">=18.0.0"
   },
   "volta": {
-    "node": "22.14.0",
+    "node": "24.6.0",
     "pnpm": "10.14.0"
   },
   "config": {
