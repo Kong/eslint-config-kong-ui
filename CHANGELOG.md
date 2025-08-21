@@ -1,3 +1,10 @@
+## [1.5.4](https://github.com/Kong/eslint-config-kong-ui/compare/v1.5.3...v1.5.4) (2025-08-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-vue to v10 ([#34](https://github.com/Kong/eslint-config-kong-ui/issues/34)) ([a58921a](https://github.com/Kong/eslint-config-kong-ui/commit/a58921a40d39cd3f7b3a7927b0ade7390877f292))
+
 ## [1.5.3](https://github.com/Kong/eslint-config-kong-ui/compare/v1.5.2...v1.5.3) (2025-08-21)
 
 
