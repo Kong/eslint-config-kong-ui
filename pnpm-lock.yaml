@@ -36,7 +36,7 @@ importers:
         specifier: ^2.4.0
         version: 2.4.0
       typescript-eslint:
-        specifier: ^8.39.0
+        specifier: ^8.39.1
         version: 8.40.0(eslint@9.33.0(jiti@2.4.2))(typescript@5.4.5)
       vue-eslint-parser:
         specifier: ^10.2.0
@@ -2993,7 +2993,7 @@ snapshots:
       '@typescript-eslint/types': 8.40.0
       '@typescript-eslint/typescript-estree': 8.40.0(typescript@5.4.5)
       '@typescript-eslint/visitor-keys': 8.40.0
-      debug: 4.3.5
+      debug: 4.4.1
       eslint: 9.33.0(jiti@2.4.2)
       typescript: 5.4.5
     transitivePeerDependencies:
@@ -3003,7 +3003,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/tsconfig-utils': 8.40.0(typescript@5.4.5)
       '@typescript-eslint/types': 8.40.0
-      debug: 4.3.5
+      debug: 4.4.1
       typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
@@ -3022,7 +3022,7 @@ snapshots:
       '@typescript-eslint/types': 8.40.0
       '@typescript-eslint/typescript-estree': 8.40.0(typescript@5.4.5)
       '@typescript-eslint/utils': 8.40.0(eslint@9.33.0(jiti@2.4.2))(typescript@5.4.5)
-      debug: 4.3.5
+      debug: 4.4.1
       eslint: 9.33.0(jiti@2.4.2)
       ts-api-utils: 2.1.0(typescript@5.4.5)
       typescript: 5.4.5
@@ -3037,7 +3037,7 @@ snapshots:
       '@typescript-eslint/tsconfig-utils': 8.40.0(typescript@5.4.5)
       '@typescript-eslint/types': 8.40.0
       '@typescript-eslint/visitor-keys': 8.40.0
-      debug: 4.3.5
+      debug: 4.4.1
       fast-glob: 3.3.2
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -3082,7 +3082,7 @@ snapshots:
 
   agent-base@7.1.1:
     dependencies:
-      debug: 4.3.5
+      debug: 4.4.1
     transitivePeerDependencies:
       - supports-color
 
