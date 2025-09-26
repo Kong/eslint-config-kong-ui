@@ -43,7 +43,7 @@
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@digitalroute/cz-conventional-changelog-for-jira": "^8.0.1",
-    "@evilmartians/lefthook": "^1.11.16",
+    "@evilmartians/lefthook": "^1.13.0",
     "@semantic-release/changelog": "^6.0.3",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
@@ -121,8 +121,8 @@
     "node": ">=18.0.0"
   },
   "volta": {
-    "node": "24.6.0",
-    "pnpm": "10.14.0"
+    "node": "24.8.0",
+    "pnpm": "10.16.1"
   },
   "config": {
     "commitizen": {
@@ -134,5 +134,5 @@
       "jiraAppend": "]"
     }
   },
-  "packageManager": "pnpm@10.14.0"
+  "packageManager": "pnpm@10.16.1"
 }
