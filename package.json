@@ -26,14 +26,14 @@
   "dependencies": {
     "@eslint/js": "^9.33.0",
     "@stylistic/eslint-plugin": "^5.2.3",
-    "eslint-plugin-cypress": "^5.1.0",
+    "eslint-plugin-cypress": "^5.1.1",
     "eslint-plugin-jsonc": "^2.20.1",
     "eslint-plugin-n": "^17.21.3",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-vue": "^10.4.0",
     "globals": "^15.15.0",
-    "jsonc-eslint-parser": "^2.4.0",
-    "typescript-eslint": "^8.39.0",
+    "jsonc-eslint-parser": "^2.4.1",
+    "typescript-eslint": "^8.39.1",
     "vue-eslint-parser": "^10.2.0"
   },
   "peerDependencies": {
