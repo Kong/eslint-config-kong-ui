@@ -1,3 +1,10 @@
+## [1.5.6](https://github.com/Kong/eslint-config-kong-ui/compare/v1.5.5...v1.5.6) (2025-10-15)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies with stable versions ([#53](https://github.com/Kong/eslint-config-kong-ui/issues/53)) ([c9d81ea](https://github.com/Kong/eslint-config-kong-ui/commit/c9d81ea74c3add47abf39d6be94816a1df05d238))
+
 ## [1.5.5](https://github.com/Kong/eslint-config-kong-ui/compare/v1.5.4...v1.5.5) (2025-08-21)
 
 
