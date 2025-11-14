@@ -24,8 +24,8 @@
     "commit": "cz"
   },
   "dependencies": {
-    "@eslint/js": "^9.37.0",
-    "@stylistic/eslint-plugin": "^5.4.0",
+    "@eslint/js": "^9.39.0",
+    "@stylistic/eslint-plugin": "^5.5.0",
     "eslint-plugin-cypress": "^5.2.0",
     "eslint-plugin-jsonc": "^2.21.0",
     "eslint-plugin-n": "^17.23.1",
@@ -37,7 +37,7 @@
     "vue-eslint-parser": "^10.2.0"
   },
   "peerDependencies": {
-    "eslint": ">= 9.37.0"
+    "eslint": ">= 9.39.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
@@ -47,7 +47,7 @@
     "@semantic-release/changelog": "^6.0.3",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.37.0",
+    "eslint": "^9.39.0",
     "semantic-release": "^24.2.7"
   },
   "pnpm": {
@@ -121,8 +121,8 @@
     "node": ">=18.0.0"
   },
   "volta": {
-    "node": "24.10.0",
-    "pnpm": "10.18.3"
+    "node": "24.11.0",
+    "pnpm": "10.20.0"
   },
   "config": {
     "commitizen": {
@@ -134,5 +134,5 @@
       "jiraAppend": "]"
     }
   },
-  "packageManager": "pnpm@10.18.3"
+  "packageManager": "pnpm@10.20.0"
 }
