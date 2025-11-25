@@ -1,3 +1,10 @@
+## [1.5.7](https://github.com/Kong/eslint-config-kong-ui/compare/v1.5.6...v1.5.7) (2025-11-25)
+
+
+### Bug Fixes
+
+* back to publishing using semantic-release [KHCP-17673] ([#63](https://github.com/Kong/eslint-config-kong-ui/issues/63)) ([56394bd](https://github.com/Kong/eslint-config-kong-ui/commit/56394bd9b709c0bcd860b18200ffb900e71ca578))
+
 ## [1.5.6](https://github.com/Kong/eslint-config-kong-ui/compare/v1.5.5...v1.5.6) (2025-10-15)
 
 
