@@ -116,8 +116,8 @@
     "node": ">=18.0.0"
   },
   "volta": {
-    "node": "24.10.0",
-    "pnpm": "10.18.3"
+    "node": "24.11.1",
+    "pnpm": "10.24.0"
   },
   "config": {
     "commitizen": {
@@ -129,5 +129,5 @@
       "jiraAppend": "]"
     }
   },
-  "packageManager": "pnpm@10.18.3"
+  "packageManager": "pnpm@10.24.0"
 }
