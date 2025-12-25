@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/Kong/eslint-config-kong-ui/compare/v1.5.7...v1.6.0) (2025-12-25)
+
+
+### Features
+
+* turn off vue/require-default-prop rule ([#67](https://github.com/Kong/eslint-config-kong-ui/issues/67)) ([2bcdf31](https://github.com/Kong/eslint-config-kong-ui/commit/2bcdf317442ce6d1a3145604c95a29ea33a8f707))
+
 ## [1.5.7](https://github.com/Kong/eslint-config-kong-ui/compare/v1.5.6...v1.5.7) (2025-11-25)
 
 
