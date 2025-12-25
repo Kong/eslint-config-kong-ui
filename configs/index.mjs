@@ -203,6 +203,7 @@ export default [
           message: 'Using "data-tracking-id" is not allowed. Use "data-testid" instead.',
         },
       ],
+      'vue/require-default-prop': 'off',
     },
   },
   {
