@@ -2,26 +2,27 @@
   "name": "@kong/eslint-config-kong-ui",
   "version": "1.6.0",
   "description": "Sharable ESLint configuration for Kong's frontend repositories",
-  "main": "configs/index.mjs",
   "type": "module",
+  "main": "configs/index.mjs",
   "files": [
     "configs"
   ],
   "exports": {
     ".": "./configs/index.mjs",
+    "./cypress": "./configs/cypress.mjs",
     "./default": "./configs/index.mjs",
     "./json": "./configs/json.mjs",
-    "./cypress": "./configs/cypress.mjs",
+    "./package-json": "./configs/package-json.mjs",
     "./package.json": "./package.json"
   },
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
+    "commit": "cz",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "semantic-release": "semantic-release",
-    "commit": "cz"
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "@eslint/js": "^9.37.0",

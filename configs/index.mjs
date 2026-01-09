@@ -5,6 +5,7 @@ import pluginVue from 'eslint-plugin-vue'
 import pluginPromise from 'eslint-plugin-promise'
 import stylistic from '@stylistic/eslint-plugin'
 import globals from 'globals'
+import packageJsonConfig from './package-json.mjs'
 
 const stylisticRules = {
   '@stylistic/indent': ['error', 2],
@@ -214,4 +215,6 @@ export default [
       '@typescript-eslint/no-var-requires': 'off',
     },
   },
+  // Include package.json sorting by default
+  ...packageJsonConfig,
 ]

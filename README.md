@@ -81,6 +81,21 @@ import eslintKongUiConfigCypress from '@kong/eslint-config-kong-ui/cypress'
 > [!Note]
 > You will likely only want to apply the Cypress config to a subset of file patterns in your project. See the section on [applying a config to a subset of files](#apply-a-config-to-a-subset-of-files) for detailed instructions.
 
+#### Package.json config
+
+The Package.json config provides property sorting for `package.json` files and includes rules configured via `eslint-plugin-jsonc`. It enforces a consistent order of properties in your `package.json` files and sorts dependencies alphabetically.
+
+> [!Note]
+> **This config is automatically included** in the [Default config](#default-config), so you don't need to import it separately. It will automatically apply to all `**/package.json` files when you use `@kong/eslint-config-kong-ui`.
+
+The property order follows common conventions with metadata fields first, followed by exports, scripts, dependencies, and repository information.
+
+If you need to use it separately (e.g., in a custom setup), it can be imported like this:
+
+```javascript
+import eslintKongUiConfigPackageJson from '@kong/eslint-config-kong-ui/package-json'
+```
+
 ### Setup
 
 To use the shared config, import the package inside of an `eslint.config.mjs` file and add it into the exported array, like this:
@@ -127,6 +142,7 @@ import eslintKongUiConfigCypress from '@kong/eslint-config-kong-ui/cypress'
 
 export default [
   // Use the main config for all other files
+  // (package.json sorting is automatically included)
   ...eslintKongUiConfig,
   // Only apply the shared JSON config to files that match the given pattern
   ...eslintKongUiConfigJson.map(config => ({
