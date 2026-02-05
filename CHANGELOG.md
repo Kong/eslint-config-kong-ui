@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/Kong/eslint-config-kong-ui/compare/v1.6.0...v1.6.1) (2026-02-05)
+
+
+### Bug Fixes
+
+* prevent invalid 'data-testId' attributes ([#71](https://github.com/Kong/eslint-config-kong-ui/issues/71)) ([aa375e1](https://github.com/Kong/eslint-config-kong-ui/commit/aa375e1aa2172533611d738e730f307aa7a1a7a1))
+
 # [1.6.0](https://github.com/Kong/eslint-config-kong-ui/compare/v1.5.7...v1.6.0) (2025-12-25)
 
 
