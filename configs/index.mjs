@@ -185,6 +185,10 @@ export default [
           message: 'Using "data-test-id" is not allowed. Use "data-testid" instead.',
         },
         {
+          key: 'data-testId',
+          message: 'Using "data-testId" is not allowed. Use "data-testid" instead.',
+        },
+        {
           key: 'data-tracking-id',
           message: 'Using "data-tracking-id" is not allowed. Use "data-testid" instead.',
         },
@@ -197,6 +201,10 @@ export default [
         {
           argument: 'data-test-id',
           message: 'Using "data-test-id" is not allowed. Use "data-testid" instead.',
+        },
+        {
+          argument: 'data-testId',
+          message: 'Using "data-testId" is not allowed. Use "data-testid" instead.',
         },
         {
           argument: 'data-tracking-id',
