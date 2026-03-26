@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/Kong/eslint-config-kong-ui/compare/v1.6.1...v1.6.2) (2026-03-26)
+
+
+### Bug Fixes
+
+* audit-fix ([#77](https://github.com/Kong/eslint-config-kong-ui/issues/77)) ([103b7f4](https://github.com/Kong/eslint-config-kong-ui/commit/103b7f43c54797494d171b7fd9a90e7759fad2db))
+
 ## [1.6.1](https://github.com/Kong/eslint-config-kong-ui/compare/v1.6.0...v1.6.1) (2026-02-05)
 
 
