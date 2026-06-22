@@ -15,6 +15,9 @@ importers:
       '@eslint/js':
         specifier: ^9.37.0
         version: 9.37.0
+      '@kong/eslint-plugin-design-tokens':
+        specifier: ^0.0.1
+        version: 0.0.1(eslint@9.37.0(jiti@2.4.2))(vue-eslint-parser@10.2.0(eslint@9.37.0(jiti@2.4.2)))
       '@stylistic/eslint-plugin':
         specifier: ^5.4.0
         version: 5.4.0(eslint@9.37.0(jiti@2.4.2))
@@ -278,6 +281,16 @@ packages:
   '@humanwhocodes/retry@0.4.2':
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
+
+  '@kong/eslint-plugin-design-tokens@0.0.1':
+    resolution: {integrity: sha512-bpiHNav0EsWNZ1R6dPsFoAg0lOzzT5FXKjmH8qgxyGYY4YqGB9ObKmA57SLapCy85jloWuH2R/s5Z9r+O6ZJeg==}
+    engines: {node: '>=20.19.5', pnpm: '>=10.28.2'}
+    peerDependencies:
+      eslint: ^9.0.0
+      vue-eslint-parser: '>=10.2.0'
+    peerDependenciesMeta:
+      vue-eslint-parser:
+        optional: true
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -2920,6 +2933,12 @@ snapshots:
   '@humanwhocodes/retry@0.3.0': {}
 
   '@humanwhocodes/retry@0.4.2': {}
+
+  '@kong/eslint-plugin-design-tokens@0.0.1(eslint@9.37.0(jiti@2.4.2))(vue-eslint-parser@10.2.0(eslint@9.37.0(jiti@2.4.2)))':
+    dependencies:
+      eslint: 9.37.0(jiti@2.4.2)
+    optionalDependencies:
+      vue-eslint-parser: 10.2.0(eslint@9.37.0(jiti@2.4.2))
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
