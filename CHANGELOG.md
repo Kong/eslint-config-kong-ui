@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/Kong/eslint-config-kong-ui/compare/v1.6.2...v1.7.0) (2026-06-22)
+
+
+### Features
+
+* integrate '@kong/eslint-plugin-design-tokens' ([#79](https://github.com/Kong/eslint-config-kong-ui/issues/79)) ([00e5658](https://github.com/Kong/eslint-config-kong-ui/commit/00e5658fd78fba90afdbf5c8510686206248a0fd))
+
 ## [1.6.2](https://github.com/Kong/eslint-config-kong-ui/compare/v1.6.1...v1.6.2) (2026-03-26)
 
 
