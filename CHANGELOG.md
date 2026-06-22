@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/Kong/eslint-config-kong-ui/compare/v1.7.0...v1.7.1) (2026-06-22)
+
+
+### Bug Fixes
+
+* **deps:** bump version ([#80](https://github.com/Kong/eslint-config-kong-ui/issues/80)) ([99d8f55](https://github.com/Kong/eslint-config-kong-ui/commit/99d8f552914f791e64244119836e814212410a26))
+
 # [1.7.0](https://github.com/Kong/eslint-config-kong-ui/compare/v1.6.2...v1.7.0) (2026-06-22)
 
 
