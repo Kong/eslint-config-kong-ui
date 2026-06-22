@@ -16,8 +16,8 @@ importers:
         specifier: ^9.37.0
         version: 9.37.0
       '@kong/eslint-plugin-design-tokens':
-        specifier: ^0.0.1
-        version: 0.0.1(eslint@9.37.0(jiti@2.4.2))(vue-eslint-parser@10.2.0(eslint@9.37.0(jiti@2.4.2)))
+        specifier: ^1.0.1
+        version: 1.0.1(eslint@9.37.0(jiti@2.4.2))(vue-eslint-parser@10.2.0(eslint@9.37.0(jiti@2.4.2)))
       '@stylistic/eslint-plugin':
         specifier: ^5.4.0
         version: 5.4.0(eslint@9.37.0(jiti@2.4.2))
@@ -282,8 +282,8 @@ packages:
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
 
-  '@kong/eslint-plugin-design-tokens@0.0.1':
-    resolution: {integrity: sha512-bpiHNav0EsWNZ1R6dPsFoAg0lOzzT5FXKjmH8qgxyGYY4YqGB9ObKmA57SLapCy85jloWuH2R/s5Z9r+O6ZJeg==}
+  '@kong/eslint-plugin-design-tokens@1.0.1':
+    resolution: {integrity: sha512-n31tvVfQ7rzk/DmlVkOHiPW+3WyxLuxWxBdvD6FxG1SyyvX9f0WMEf5tQfEUCZ2XmoY9y3Fw33G7BS6sw9LYIw==}
     engines: {node: '>=20.19.5', pnpm: '>=10.28.2'}
     peerDependencies:
       eslint: ^9.0.0
@@ -2934,7 +2934,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
-  '@kong/eslint-plugin-design-tokens@0.0.1(eslint@9.37.0(jiti@2.4.2))(vue-eslint-parser@10.2.0(eslint@9.37.0(jiti@2.4.2)))':
+  '@kong/eslint-plugin-design-tokens@1.0.1(eslint@9.37.0(jiti@2.4.2))(vue-eslint-parser@10.2.0(eslint@9.37.0(jiti@2.4.2)))':
     dependencies:
       eslint: 9.37.0(jiti@2.4.2)
     optionalDependencies:
