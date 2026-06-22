@@ -5,6 +5,7 @@ import pluginVue from 'eslint-plugin-vue'
 import pluginPromise from 'eslint-plugin-promise'
 import stylistic from '@stylistic/eslint-plugin'
 import globals from 'globals'
+import designTokensPlugin from '@kong/eslint-plugin-design-tokens'
 
 const stylisticRules = {
   '@stylistic/indent': ['error', 2],
@@ -136,6 +137,7 @@ export default [
     },
     plugins: {
       '@stylistic': stylistic,
+      '@kong/eslint-plugin-design-tokens': designTokensPlugin,
     },
     ignores: [
       '**/locales/**/*.json',
@@ -212,6 +214,7 @@ export default [
         },
       ],
       'vue/require-default-prop': 'off',
+      '@kong/eslint-plugin-design-tokens/token-constant-requires-css-var': 'error',
     },
   },
   {
