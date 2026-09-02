@@ -12,6 +12,7 @@
     "./default": "./configs/index.mjs",
     "./json": "./configs/json.mjs",
     "./cypress": "./configs/cypress.mjs",
+    "./playwright": "./configs/playwright.mjs",
     "./package.json": "./package.json"
   },
   "publishConfig": {
@@ -29,6 +30,7 @@
     "@stylistic/eslint-plugin": "^5.4.0",
     "eslint-plugin-cypress": "^5.2.0",
     "eslint-plugin-jsonc": "^2.21.0",
+    "eslint-plugin-playwright": "^2.11.0",
     "eslint-plugin-n": "^17.23.1",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-vue": "^10.5.0",

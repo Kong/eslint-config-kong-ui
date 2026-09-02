@@ -1,6 +1,7 @@
 import eslintKongUiConfig from './configs/index.mjs'
 import eslintKongUiConfigJson from './configs/json.mjs'
 import eslintKongUiConfigCypress from './configs/cypress.mjs'
+import eslintKongUiConfigPlaywright from './configs/playwright.mjs'
 
 export default [
   // Use the main config for all files
@@ -16,6 +17,14 @@ export default [
     files: [
       '**/*.cy.{ts,js}',
       '**/cypress/**',
+    ],
+  })),
+  // Only apply the shared Playwright config to files that match the given pattern
+  ...eslintKongUiConfigPlaywright.map(config => ({
+    ...config,
+    files: [
+      '**/*.spec.{ts,js}',
+      '**/playwright/**',
     ],
   })),
 ]
