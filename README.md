@@ -81,6 +81,19 @@ import eslintKongUiConfigCypress from '@kong/eslint-config-kong-ui/cypress'
 > [!Note]
 > You will likely only want to apply the Cypress config to a subset of file patterns in your project. See the section on [applying a config to a subset of files](#apply-a-config-to-a-subset-of-files) for detailed instructions.
 
+#### Playwright config
+
+The Playwright config includes all settings from the [Default config](#default-config) and provides additional rules for Playwright test files, given a pattern for `files` that your **host project provides**, and includes rules and preferred formatting settings configured via `eslint-plugin-playwright`, as well as the ESLint and TypeScript ESLint recommended settings. See [`playwright.mjs`](./configs/playwright.mjs) to view the configuration.
+
+The Playwright config can be imported as shown here:
+
+```javascript
+import eslintKongUiConfigPlaywright from '@kong/eslint-config-kong-ui/playwright'
+```
+
+> [!Note]
+> You will likely only want to apply the Playwright config to a subset of file patterns in your project. See the section on [applying a config to a subset of files](#apply-a-config-to-a-subset-of-files) for detailed instructions.
+
 ### Setup
 
 To use the shared config, import the package inside of an `eslint.config.mjs` file and add it into the exported array, like this:
@@ -124,6 +137,7 @@ For example, you may only want to apply the [JSON config](#json-config) to `**/l
 import eslintKongUiConfig from '@kong/eslint-config-kong-ui'
 import eslintKongUiConfigJson from '@kong/eslint-config-kong-ui/json'
 import eslintKongUiConfigCypress from '@kong/eslint-config-kong-ui/cypress'
+import eslintKongUiConfigPlaywright from '@kong/eslint-config-kong-ui/playwright'
 
 export default [
   // Use the main config for all other files
@@ -141,6 +155,14 @@ export default [
       '**/cypress/**',
       'cypress/integration/**.spec.{js,ts,jsx,tsx}',
       'cypress/integration/**.cy.{js,ts,jsx,tsx}',
+    ]
+  })),
+  // Only apply the shared Playwright config to files that match the given pattern
+  ...eslintKongUiConfigPlaywright.map(config => ({
+    ...config,
+    files: [
+      '**/*.spec.ts',
+      '**/playwright/**',
     ]
   })),
   // your modifications
