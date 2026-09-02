@@ -23,8 +23,7 @@ export default [
   ...eslintKongUiConfigPlaywright.map(config => ({
     ...config,
     files: [
-      '**/*.spec.{ts,js}',
-      '**/playwright/**',
+      '**/playwright/**/*.spec.{ts,js}',
     ],
   })),
 ]

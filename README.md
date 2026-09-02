@@ -94,6 +94,9 @@ import eslintKongUiConfigPlaywright from '@kong/eslint-config-kong-ui/playwright
 > [!Note]
 > You will likely only want to apply the Playwright config to a subset of file patterns in your project. See the section on [applying a config to a subset of files](#apply-a-config-to-a-subset-of-files) for detailed instructions.
 
+> [!Warning]
+> If your project has **both** Cypress and Playwright tests, and any legacy Cypress specs use a `*.spec.ts` naming convention (rather than `*.cy.ts`), do not give the Playwright config a bare `**/*.spec.ts` pattern — combine the directory and extension into a single glob (e.g. `**/playwright/**/*.spec.ts`) so it can't also match a `*.spec.ts` file living under `cypress/`. Two independent patterns in the same `files` array are OR'd together, so `['**/*.spec.ts', '**/playwright/**']` will double-apply both the Cypress and Playwright rule sets (and their conflicting `languageOptions`) to any Cypress spec that happens to be named `*.spec.ts`.
+
 ### Setup
 
 To use the shared config, import the package inside of an `eslint.config.mjs` file and add it into the exported array, like this:
@@ -157,12 +160,15 @@ export default [
       'cypress/integration/**.cy.{js,ts,jsx,tsx}',
     ]
   })),
-  // Only apply the shared Playwright config to files that match the given pattern
+  // Only apply the shared Playwright config to files that match the given pattern.
+  // Note: this combines directory + extension into a single glob rather than two
+  // separate alternatives — if any legacy Cypress specs use a *.spec.ts naming
+  // convention (as here), a bare '**/*.spec.ts' pattern would also match those and
+  // double-apply both rule sets. See the Warning above.
   ...eslintKongUiConfigPlaywright.map(config => ({
     ...config,
     files: [
-      '**/*.spec.ts',
-      '**/playwright/**',
+      '**/playwright/**/*.spec.ts',
     ]
   })),
   // your modifications
