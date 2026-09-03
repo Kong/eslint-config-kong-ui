@@ -92,10 +92,7 @@ import eslintKongUiConfigPlaywright from '@kong/eslint-config-kong-ui/playwright
 ```
 
 > [!Note]
-> You will likely only want to apply the Playwright config to a subset of file patterns in your project. See the section on [applying a config to a subset of files](#apply-a-config-to-a-subset-of-files) for detailed instructions.
-
-> [!Warning]
-> If your project has **both** Cypress and Playwright tests, and any legacy Cypress specs use a `*.spec.ts` naming convention (rather than `*.cy.ts`), do not give the Playwright config a bare `**/*.spec.ts` pattern — combine the directory and extension into a single glob (e.g. `**/playwright/**/*.spec.ts`) so it can't also match a `*.spec.ts` file living under `cypress/`. Two independent patterns in the same `files` array are OR'd together, so `['**/*.spec.ts', '**/playwright/**']` will double-apply both the Cypress and Playwright rule sets (and their conflicting `languageOptions`) to any Cypress spec that happens to be named `*.spec.ts`.
+> You will likely only want to apply the Playwright config to a subset of file patterns in your project. See the section on [applying a config to a subset of files](#apply-a-config-to-a-subset-of-files) for detailed instructions. If your project has **both** Cypress and Playwright tests, combine the directory and extension into a single glob (e.g. `**/playwright/**/*.spec.ts`) rather than a bare `**/*.spec.ts`, so it can't also match a legacy Cypress spec named `*.spec.ts` living under `cypress/`.
 
 ### Setup
 
@@ -161,10 +158,9 @@ export default [
     ]
   })),
   // Only apply the shared Playwright config to files that match the given pattern.
-  // Note: this combines directory + extension into a single glob rather than two
-  // separate alternatives — if any legacy Cypress specs use a *.spec.ts naming
-  // convention (as here), a bare '**/*.spec.ts' pattern would also match those and
-  // double-apply both rule sets. See the Warning above.
+  // Combines directory + extension into a single glob rather than two separate
+  // alternatives — legacy Cypress e2e specs also use *.spec.ts, so a bare
+  // '**/*.spec.ts' pattern would double-apply both rule sets to those files.
   ...eslintKongUiConfigPlaywright.map(config => ({
     ...config,
     files: [
