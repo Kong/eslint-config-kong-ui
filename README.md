@@ -83,7 +83,7 @@ import eslintKongUiConfigCypress from '@kong/eslint-config-kong-ui/cypress'
 
 #### Playwright config
 
-The Playwright config includes all settings from the [Default config](#default-config) and provides additional rules for Playwright test files, given a pattern for `files` that your **host project provides**, and includes rules and preferred formatting settings configured via `eslint-plugin-playwright`, as well as the ESLint and TypeScript ESLint recommended settings. See [`playwright.mjs`](./configs/playwright.mjs) to view the configuration.
+The Playwright config is additive — it does not re-apply the [Default config](#default-config), since your project should already have that applied to all files. It provides additional rules for Playwright test files, given a pattern for `files` that your **host project provides**, via `eslint-plugin-playwright`'s recommended settings. See [`playwright.mjs`](./configs/playwright.mjs) to view the configuration.
 
 The Playwright config can be imported as shown here:
 
