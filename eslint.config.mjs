@@ -19,11 +19,13 @@ export default [
       '**/cypress/**',
     ],
   })),
-  // Only apply the shared Playwright config to files that match the given pattern
+  // Only apply the shared Playwright config to this repo's own fixture — the pattern
+  // here is specific to this repo's fixture layout, not a recommended convention;
+  // consuming repos should choose a pattern that matches their own test layout.
   ...eslintKongUiConfigPlaywright.map(config => ({
     ...config,
     files: [
-      '**/playwright/**/*.spec.{ts,js}',
+      'fixtures/playwright/**',
     ],
   })),
 ]
