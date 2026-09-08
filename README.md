@@ -81,6 +81,19 @@ import eslintKongUiConfigCypress from '@kong/eslint-config-kong-ui/cypress'
 > [!Note]
 > You will likely only want to apply the Cypress config to a subset of file patterns in your project. See the section on [applying a config to a subset of files](#apply-a-config-to-a-subset-of-files) for detailed instructions.
 
+#### Playwright config
+
+The Playwright config is additive — it does not re-apply the [Default config](#default-config), since your project should already have that applied to all files. It provides additional rules for Playwright test files, given a pattern for `files` that your **host project provides**, via `eslint-plugin-playwright`'s recommended settings. See [`playwright.mjs`](./configs/playwright.mjs) to view the configuration.
+
+The Playwright config can be imported as shown here:
+
+```javascript
+import eslintKongUiConfigPlaywright from '@kong/eslint-config-kong-ui/playwright'
+```
+
+> [!Note]
+> You will likely only want to apply the Playwright config to a subset of file patterns in your project. See the section on [applying a config to a subset of files](#apply-a-config-to-a-subset-of-files) for detailed instructions. If your project has **both** Cypress and Playwright tests, combine the directory and extension into a single glob (e.g. `**/playwright/**/*.spec.ts`) rather than a bare `**/*.spec.ts`, so it can't also match a legacy Cypress spec named `*.spec.ts` living under `cypress/`.
+
 ### Setup
 
 To use the shared config, import the package inside of an `eslint.config.mjs` file and add it into the exported array, like this:
@@ -124,6 +137,7 @@ For example, you may only want to apply the [JSON config](#json-config) to `**/l
 import eslintKongUiConfig from '@kong/eslint-config-kong-ui'
 import eslintKongUiConfigJson from '@kong/eslint-config-kong-ui/json'
 import eslintKongUiConfigCypress from '@kong/eslint-config-kong-ui/cypress'
+import eslintKongUiConfigPlaywright from '@kong/eslint-config-kong-ui/playwright'
 
 export default [
   // Use the main config for all other files
@@ -141,6 +155,16 @@ export default [
       '**/cypress/**',
       'cypress/integration/**.spec.{js,ts,jsx,tsx}',
       'cypress/integration/**.cy.{js,ts,jsx,tsx}',
+    ]
+  })),
+  // Only apply the shared Playwright config to files that match the given pattern.
+  // Combines directory + extension into a single glob rather than two separate
+  // alternatives — legacy Cypress e2e specs also use *.spec.ts, so a bare
+  // '**/*.spec.ts' pattern would double-apply both rule sets to those files.
+  ...eslintKongUiConfigPlaywright.map(config => ({
+    ...config,
+    files: [
+      '**/playwright/**/*.spec.ts',
     ]
   })),
   // your modifications
