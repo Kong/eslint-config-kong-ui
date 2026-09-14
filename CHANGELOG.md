@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/Kong/eslint-config-kong-ui/compare/v1.7.1...v1.8.0) (2026-09-14)
+
+
+### Features
+
+* add Playwright config (origin branch test) ([#84](https://github.com/Kong/eslint-config-kong-ui/issues/84)) ([c076c1a](https://github.com/Kong/eslint-config-kong-ui/commit/c076c1a51a64fbb2162fa87bfb51c14b3ce47af4))
+
 ## [1.7.1](https://github.com/Kong/eslint-config-kong-ui/compare/v1.7.0...v1.7.1) (2026-06-22)
 
 
