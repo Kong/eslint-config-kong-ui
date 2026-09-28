@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/Kong/eslint-config-kong-ui/compare/v1.8.0...v1.8.1) (2026-09-28)
+
+
+### Bug Fixes
+
+* switching ci from pat to app token [KHCP-2195] ([#86](https://github.com/Kong/eslint-config-kong-ui/issues/86)) ([949fc3e](https://github.com/Kong/eslint-config-kong-ui/commit/949fc3edde27b68d1155da1ea285932ba376e7e9))
+
 # [1.8.0](https://github.com/Kong/eslint-config-kong-ui/compare/v1.7.1...v1.8.0) (2026-09-14)
 
 
